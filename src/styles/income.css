@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+    background: #fff;
+}
+th, td:first-child {
+    text-transform: uppercase;
+}
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+.hovered {
+    background: rgba(133, 187, 241, 0.472);
+}

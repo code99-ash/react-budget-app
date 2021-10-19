@@ -1,0 +1,9 @@
+.budget-card {
+    width: 300px;
+}
+
+.budget-length {
+    float: right;
+    font-size: 28px;
+    color: dodgerblue;
+}

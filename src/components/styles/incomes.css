@@ -1,0 +1,60 @@
+.income-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.income-card div {
+    margin-top: 10px;
+}
+
+.income-card__progress > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.income-card__progress > div > span {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    width: 150px;
+}
+
+.income-card__progress > div .progress {
+    width: calc(100% - 150px);
+    height: 20px;
+    background: #ddd;
+    padding: 0;
+}
+
+.progress-full {
+    background: dodgerblue !important;
+}
+
+.progress__value {
+    background: green !important;
+    height: inherit;
+    margin: 0;
+    outline: none;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .income-card__progress > div {
+        flex-wrap: wrap;
+    }
+    .income-card__progress > div > span {
+        width: 100%;
+    }
+    .income-card__progress > div .progress {
+        width: 100%;
+        height: 15px;
+        overflow: hidden;
+        padding: 0;
+    }
+    .progress__value {
+        margin: 0;
+    }
+}
